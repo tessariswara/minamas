@@ -68,7 +68,7 @@ const AddPolicy = (props) => {
             justifyContent: 'space-between'
           }}
         >
-          <Typography variant="h3">ENTER STAFF DETAILS </Typography>
+          <Typography variant="h3">Registration</Typography>
           <Typography>
             <ClearIcon onClick={handleClose} style={{ cursor: 'pointer' }} />
           </Typography>
@@ -76,9 +76,9 @@ const AddPolicy = (props) => {
         <DialogContent dividers>
           <form onSubmit={formik.handleSubmit}>
             <DialogContentText id="scroll-dialog-description" tabIndex={-1}>
-              <Typography style={{ marginBottom: '15px' }} variant="h6">
+              {/* <Typography style={{ marginBottom: '15px' }} variant="h6">
                 Staff Details
-              </Typography>
+              </Typography> */}
               <Grid container rowSpacing={3} columnSpacing={{ xs: 0, sm: 5, md: 4 }}>
                 <Grid item xs={12} sm={6} md={6}>
                   <FormControl fullWidth>
@@ -105,7 +105,7 @@ const AddPolicy = (props) => {
                   </FormControl>
                 </Grid>
                 <Grid item xs={12} sm={6} md={6}>
-                  <FormLabel>Full Name</FormLabel>
+                  <FormLabel>Driver Name</FormLabel>
                   <TextField
                     name="full_name"
                     type="string"
@@ -118,7 +118,7 @@ const AddPolicy = (props) => {
                   />
                 </Grid>
                 <Grid item xs={12} sm={6} md={6}>
-                  <FormLabel>Phone Number</FormLabel>
+                  <FormLabel>Contact Number</FormLabel>
                   <TextField
                     name="phone"
                     type="number"
@@ -131,7 +131,7 @@ const AddPolicy = (props) => {
                   />
                 </Grid>
                 <Grid item xs={12} sm={6} md={6}>
-                  <FormLabel>Email</FormLabel>
+                  <FormLabel>Email Addres</FormLabel>
                   <TextField
                     id="email"
                     name="email"

@@ -60,7 +60,7 @@ const dashboard = {
   children: [
     {
       id: 'default',
-      title: 'Dashboard',
+      title: 'Beranda',
       type: 'item',
       url: '/dashboard/default',
       icon: icons.IconHome,
@@ -86,6 +86,13 @@ const dashboard = {
       type: 'item',
       url: '/management/assignDuty',
       icon: icons.IconClipboardTypography
+    },
+    {
+      id: 'creditors',
+      title: 'Digital Sign',
+      type: 'item',
+      url: '/hrms/cred',
+      icon: icons.IconCreditCardFilled
     }
     // {
     //   id: 'staff',

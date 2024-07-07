@@ -49,14 +49,14 @@ const managements = {
       type: 'item',
       url: '/hrms/supplier',
       icon: icons.IconShoppingCart
-    }
+    },
     // {
     //   id: 'fuel',
-    //   title: 'Fuel',
+    //   title: 'Role Management',
     //   type: 'item',
     //   url: '/managment/fuel',
     //   icon: icons.IconGasStation
-    // },
+    // }
     // {
     //   id: 'pumps',
     //   title: 'Pumps',
@@ -78,13 +78,13 @@ const managements = {
     //   url: '/savingList/saving',
     //   icon: icons.IconPigMoney
     // },
-    // {
-    //   id: 'sales report',
-    //   title: 'Sales Report',
-    //   type: 'item',
-    //   url: '/managment/sales',
-    //   icon: icons.IconReport
-    // }
+    {
+      id: 'sales report',
+      title: 'Role Management',
+      type: 'item',
+      url: '/managment/sales',
+      icon: icons.IconReport
+    }
   ]
 };
 

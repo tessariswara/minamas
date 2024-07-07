@@ -45,9 +45,14 @@ const Fuel = () => {
       <AddFuel open={openAdd} handleClose={handleCloseAdd} />
       <Container>
         <Stack direction="row" alignItems="center" mb={5} justifyContent="space-between">
-          <Typography variant="h4">Fuel-Management</Typography>
-          <Stack direction="row" alignItems="center" justifyContent="flex-end" spacing={2}>
-            <Button variant="contained" startIcon={<Iconify icon="eva:plus-fill" />} onClick={handleOpenAdd}>
+          <Typography variant="h4">Bensin Management</Typography>
+          <Stack direction="row" alignItems="center" justifyContent="center" spacing={2}>
+            <Button
+              variant="contained"
+              startIcon={<Iconify icon="eva:plus-fill" />}
+              onClick={handleOpenAdd}
+              style={{ backgroundColor: '#E84625', borderRadius: '60px' }}
+            >
               Add New Order
             </Button>
             <Button
@@ -55,7 +60,7 @@ const Fuel = () => {
               startIcon={<Visibility />}
               component={Link}
               to="/order/ViewOrderHistory"
-              style={{ backgroundColor: '#673AB7 ' }}
+              style={{ backgroundColor: '#E84625', borderRadius: '60px' }}
             >
               View Order History
             </Button>
@@ -68,7 +73,7 @@ const Fuel = () => {
               <DataGrid
                 rows={fuelData && fuelData}
                 columns={[
-                  { field: 'name', headerName: 'FUEL TYPE', flex: 1, cellClassName: 'name-column--cell' },
+                  { field: 'name', headerName: 'POMPA BENSIN', flex: 1, cellClassName: 'name-column--cell' },
                   // { field: 'qty', headerName: 'AVAILABLE LITERS', flex: 1, cellClassName: 'name-column--cell' },
                   { field: 'status', headerName: 'STATUS', flex: 1, cellClassName: 'name-column--cell' }
                 ]}
